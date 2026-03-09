@@ -1,0 +1,18 @@
+baseURL = 'https://vapewissen.de/'
+languageCode = 'de'
+title = 'VapeWissen.de - Cannabis Wissen & Vaporizer Guide'
+theme = ''
+
+[params]
+  description = 'Wissenschaftlich fundierte Cannabis Guides, Vaporizer Tests und Reviews'
+  author = 'VapeWissen Team'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ['HTML']
+  section = ['HTML']
+  page = ['HTML']

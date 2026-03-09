@@ -1,0 +1,71 @@
+{{ define "main" }}
+<div class="hero">
+    <h1>🌿 VapeWissen.de</h1>
+    <p class="tagline">Dein Guide für Cannabis-Wissenschaft & Vaporizer</p>
+</div>
+
+<section class="articles-section">
+    <h2>📚 Neueste Artikel</h2>
+    <div class="article-grid">
+        {{ range first 10 (where .Site.Pages "Type" "artikel") }}
+        <div class="article-card">
+            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+            <p class="meta">{{ with .Params.readingtime }}⏱️ {{ . }} Lesedauer{{ end }}</p>
+            <p>{{ .Description }}</p>
+            <a href="{{ .Permalink }}" class="read-more">Weiterlesen →</a>
+        </div>
+        {{ end }}
+    </div>
+</section>
+
+<section class="products-section">
+    <h2>🔥 Top Vaporizer 2026</h2>
+    
+    <div class="product-card">
+        <h3>Storz & Bickel Mighty+</h3>
+        <p><strong>Best Overall</strong> - Der beste portable Vaporizer 2026. Präzise Temperaturkontrolle, 2 Stunden Akku, deutsche Qualität.</p>
+        <p class="price">349€</p>
+        <a href="https://www.amazon.de/dp/B09FXR9Z4P?tag=vapewissen-21" class="btn" target="_blank" rel="noopener">
+            Bei Amazon ansehen →
+        </a>
+    </div>
+
+    <div class="product-card">
+        <h3>Volcano Hybrid</h3>
+        <p><strong>Best Desktop</strong> - Der Klassiker für Zuhause. Ballon- und Schlauchsystem, App-Steuerung, unverwüstlich.</p>
+        <p class="price">699€</p>
+        <a href="https://www.amazon.de/dp/B07VFHX6YD?tag=vapewissen-21" class="btn" target="_blank" rel="noopener">
+            Bei Amazon ansehen →
+        </a>
+    </div>
+
+    <div class="product-card">
+        <h3>DynaVap "M" Plus</h3>
+        <p><strong>Best Budget</strong> - Butane-betriebener Vaporizer ohne Akku. Unzerstörbar, perfekt für Einsteiger.</p>
+        <p class="price">75€</p>
+        <a href="https://www.amazon.de/dp/B0BLQH7X8F?tag=vapewissen-21" class="btn" target="_blank" rel="noopener">
+            Bei Amazon ansehen →
+        </a>
+    </div>
+</section>
+
+<section class="quick-tips">
+    <div class="highlight">
+        <h3>🌡️ Die perfekte Vaporizer Temperatur:</h3>
+        <ul>
+            <li><strong>170-185°C</strong> - Flavor & Terpene (Tagsüber)</li>
+            <li><strong>185-200°C</strong> - Balance (Allround)</li>
+            <li><strong>200-220°C</strong> - Maximum (Abends)</li>
+        </ul>
+    </div>
+</section>
+
+<section class="newsletter">
+    <h3>📬 Wöchentliche Cannabis-Wissenschaft</h3>
+    <p>Neue Guides, Vaporizer-Tests und Deals direkt in dein Postfach.</p>
+    <form>
+        <input type="email" placeholder="deine@email.de" required>
+        <button type="submit" class="btn">Anmelden →</button>
+    </form>
+</section>
+{{ end }}

@@ -1,0 +1,31 @@
+{{ define "main" }}
+<article>
+    <h1>{{ .Title }}</h1>
+    
+    <div class="article-meta">
+        <span>📅 {{ .Date.Format "02.01.2006" }}</span>
+        {{ with .Params.readingtime }}<span> • ⏱️ {{ . }} Lesedauer</span>{{ end }}
+        {{ with .Params.author }}<span> • ✍️ {{ . }}</span>{{ end }}
+    </div>
+
+    <div class="content">
+        {{ .Content }}
+    </div>
+
+    {{ with .Params.products }}
+    <div class="products-section">
+        <h2>🔥 Empfohlene Vaporizer</h2>
+        {{ range . }}
+        <div class="product-card">
+            <h3>{{ .name }}</h3>
+            <p>{{ .description }}</p>
+            <p class="price"><strong>Preis: {{ .price }}</strong></p>
+            <a href="{{ .link }}" class="btn" target="_blank" rel="noopener">
+                Bei Amazon ansehen →
+            </a>
+        </div>
+        {{ end }}
+    </div>
+    {{ end }}
+</article>
+{{ end }}
