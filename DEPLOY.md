@@ -109,17 +109,31 @@ git push -u origin main
 
 ---
 
-## Step 5: Submit to Google
+## Step 5: Submit Sitemap to Google
 
-1. **Google Search Console:**
-   - Go to [search.google.com/search-console](https://search.google.com/search-console)
-   - Add property: `vapewissen.de`
-   - Verify via DNS (add TXT record in Netlify DNS)
-   - Submit sitemap: `https://vapewissen.de/sitemap.xml`
+**✅ Google Search Console already set up!** (TXT record verified)
 
-2. **Google Analytics** (optional):
-   - Create property at [analytics.google.com](https://analytics.google.com)
-   - Add tracking code to `layouts/_default/baseof.html`
+Now submit your sitemap:
+
+1. Go to [search.google.com/search-console](https://search.google.com/search-console)
+2. Select property: `vapewissen.de`
+3. Click **Sitemaps** in left menu
+4. Add new sitemap: `https://vapewissen.de/sitemap.xml`
+5. Click **Submit**
+
+**Request indexing for key pages:**
+- In Search Console → **URL Inspection**
+- Enter URL → Click **"Request Indexing"**
+- Do this for:
+  - `https://vapewissen.de/`
+  - `https://vapewissen.de/artikel/temperatur-guide/`
+  - `https://vapewissen.de/artikel/cannabinoide-guide/`
+
+**Google Analytics** (optional):
+- Create property at [analytics.google.com](https://analytics.google.com)
+- Add tracking code to `layouts/_default/baseof.html`
+
+**Full SEO checklist:** See `SEO_CHECKLIST.md`
 
 ---
 
