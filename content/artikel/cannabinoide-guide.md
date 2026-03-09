@@ -4,11 +4,6 @@ description: "Was sind Cannabinoide? Wie wirken THC, CBD, CBN, CBC und THCV? Der
 date: 2026-03-09
 readingtime: "12 Minuten"
 author: "VapeWissen Team"
-products:
-  - name: "Storz & Bickel Mighty+"
-    description: "Der beste portable Vaporizer 2026. Präzise Temperaturkontrolle für optimale Cannabinoid-Extraktion."
-    price: "349€"
-    link: "https://www.amazon.de/dp/B09FXR9Z4P?tag=vapewissen-21"
 ---
 
 ## Was sind Cannabinoide?
