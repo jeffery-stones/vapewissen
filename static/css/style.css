@@ -305,6 +305,64 @@ main {
     width: 100%;
 }
 
+/* ConvertKit Form Styling */
+.newsletter .formkit-form {
+    max-width: 400px !important;
+    margin: var(--spacing-md) auto 0 !important;
+}
+
+.newsletter .formkit-field {
+    margin-bottom: var(--spacing-sm) !important;
+}
+
+.newsletter .formkit-input {
+    width: 100% !important;
+    padding: var(--spacing-sm) !important;
+    font-size: 1rem !important;
+    border: 1px solid rgba(255,255,255,0.2) !important;
+    background: var(--bg) !important;
+    color: var(--text) !important;
+    border-radius: 4px !important;
+}
+
+.newsletter .formkit-input:focus {
+    outline: none !important;
+    border-color: var(--green) !important;
+}
+
+.newsletter .formkit-submit {
+    width: 100% !important;
+    padding: var(--spacing-sm) var(--spacing-lg) !important;
+    background: var(--green) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 4px !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+    font-size: 1rem !important;
+    transition: background 0.3s !important;
+}
+
+.newsletter .formkit-submit:hover {
+    background: var(--dark-green) !important;
+}
+
+.newsletter .formkit-alert {
+    margin-top: var(--spacing-sm) !important;
+    padding: var(--spacing-xs) !important;
+    border-radius: 4px !important;
+}
+
+.newsletter .formkit-alert-success {
+    background: rgba(46, 204, 113, 0.2) !important;
+    color: var(--green) !important;
+}
+
+.newsletter .formkit-alert-error {
+    background: rgba(231, 76, 60, 0.2) !important;
+    color: #e74c3c !important;
+}
+
 /* Footer */
 footer {
     background: var(--card-bg);
