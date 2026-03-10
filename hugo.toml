@@ -1,7 +1,6 @@
 baseURL = 'https://vapewissen.de/'
 languageCode = 'de'
 title = 'VapeWissen.de - Cannabis Wissen & Vaporizer Guide'
-theme = ''
 
 [params]
   description = 'Wissenschaftlich fundierte Cannabis Guides, Vaporizer Tests und Reviews'
